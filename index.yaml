@@ -2,6 +2,36 @@ apiVersion: v1
 entries:
   mayastor:
   - apiVersion: v2
+    appVersion: 2.6.0-0-main-unstable-2024-03-06-12-10-02-0
+    created: "2024-03-06T12:32:08.989565173Z"
+    dependencies:
+    - name: etcd
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.0
+    - condition: base.jaeger.enabled
+      name: jaeger-operator
+      repository: https://jaegertracing.github.io/helm-charts
+      version: 2.25.0
+    - condition: loki-stack.enabled
+      name: loki-stack
+      repository: https://grafana.github.io/helm-charts
+      version: 2.9.11
+    - condition: eventing.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 0.19.14
+    - condition: localpv-provisioner.enabled
+      name: localpv-provisioner
+      repository: https://openebs.github.io/dynamic-localpv-provisioner
+      version: 3.5.0
+    description: Mayastor Helm chart for Kubernetes
+    digest: cff7053d0a6e22817893a966c956f5e0cde0b942f32e4c339e340f74e1ded1da
+    name: mayastor
+    type: application
+    urls:
+    - https://openebs.github.io/mayastor-chart-donotuse/mayastor-2.6.0-0-main-unstable-2024-03-06-12-10-02-0.tgz
+    version: 2.6.0-0-main-unstable-2024-03-06-12-10-02-0
+  - apiVersion: v2
     appVersion: 2.6.0-0-main-unstable-2024-03-06-07-12-23-0
     created: "2024-03-06T07:34:12.936887081Z"
     dependencies:
@@ -4681,4 +4711,4 @@ entries:
     urls:
     - https://openebs.github.io/mayastor-chart-donotuse/mayastor-2.5.0-0-main-unstable-2023-10-10-14-17-14-0.tgz
     version: 2.5.0-0-main-unstable-2023-10-10-14-17-14-0
-generated: "2024-03-06T07:34:12.915960036Z"
+generated: "2024-03-06T12:32:08.968945267Z"
