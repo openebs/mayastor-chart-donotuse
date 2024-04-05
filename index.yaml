@@ -4505,7 +4505,7 @@ entries:
     version: 2.6.0-0-main-unstable-2023-12-07-15-41-43-0
   - apiVersion: v2
     appVersion: 2.5.0
-    created: "2024-04-04T13:39:43.716219402Z"
+    created: "2024-04-05T10:30:57.135878461Z"
     dependencies:
     - name: etcd
       repository: https://charts.bitnami.com/bitnami
@@ -4527,7 +4527,7 @@ entries:
       repository: https://openebs.github.io/dynamic-localpv-provisioner
       version: 3.5.0
     description: Mayastor Helm chart for Kubernetes
-    digest: 3cf184544e2fac54fe1f31e4de021aa088e62d2d262bb89675460fc0637fabd0
+    digest: 28b46e884b199281ecaa7c872971f7203e4efb06d4b6f68c1bc66bf1ec6a4602
     name: mayastor
     type: application
     urls:
@@ -5973,4 +5973,4 @@ entries:
     urls:
     - https://openebs.github.io/mayastor-chart-donotuse/mayastor-2.5.0-0-main-unstable-2023-10-10-14-17-14-0.tgz
     version: 2.5.0-0-main-unstable-2023-10-10-14-17-14-0
-generated: "2024-04-04T13:39:43.697693497Z"
+generated: "2024-04-05T10:30:57.117105426Z"
