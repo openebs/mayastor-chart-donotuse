@@ -11251,6 +11251,45 @@ entries:
     version: 2.5.0-0-main-unstable-2023-10-10-14-17-14-0
   openebs:
   - apiVersion: v2
+    appVersion: 2.8.0-0-main-unstable-2024-09-23-18-03-34-0
+    created: "2024-09-23T18:29:04.979480159Z"
+    dependencies:
+    - name: openebs-crds
+      repository: ""
+      version: 4.1.0
+    - name: localpv-provisioner
+      repository: https://openebs.github.io/dynamic-localpv-provisioner
+      version: 4.1.0
+    - condition: engines.local.zfs.enabled
+      name: zfs-localpv
+      repository: https://openebs.github.io/zfs-localpv
+      version: 2.7.0-develop
+    - condition: engines.local.lvm.enabled
+      name: lvm-localpv
+      repository: https://openebs.github.io/lvm-localpv
+      version: 1.6.0
+    - condition: engines.replicated.mayastor.enabled
+      name: mayastor
+      repository: https://openebs.github.io/mayastor-chart-donotuse
+      version: 2.8.0-0-main-unstable-2024-09-23-18-03-34-0
+    description: Containerized Attached Storage for Kubernetes
+    digest: 71e44971c36f6573cd8c2704dc07f59691ccd76d50a7900e2be4c6a79fa402db
+    home: https://www.openebs.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/HEAD/projects/openebs/icon/color/openebs-icon-color.png
+    keywords:
+    - cloud-native-storage
+    - block-storage
+    - local-storage
+    - NVMe
+    - storage
+    - kubernetes
+    name: openebs
+    sources:
+    - https://github.com/openebs/openebs
+    urls:
+    - https://openebs.github.io/mayastor-chart-donotuse/openebs-2.8.0-0-main-unstable-2024-09-23-18-03-34-0.tgz
+    version: 2.8.0-0-main-unstable-2024-09-23-18-03-34-0
+  - apiVersion: v2
     appVersion: 2.8.0-0-main-unstable-2024-09-23-10-08-56-0
     created: "2024-09-23T10:31:30.296829248Z"
     dependencies:
@@ -11640,4 +11679,4 @@ entries:
     urls:
     - https://openebs.github.io/mayastor-chart-donotuse/openebs-2.8.0-0-main-unstable-2024-08-27-14-37-58-0.tgz
     version: 2.8.0-0-main-unstable-2024-08-27-14-37-58-0
-generated: "2024-09-23T18:26:38.051029039Z"
+generated: "2024-09-23T18:29:04.95360721Z"
