@@ -14821,6 +14821,45 @@ entries:
     version: 2.5.0-0-main-unstable-2023-10-10-14-17-14-0
   openebs:
   - apiVersion: v2
+    appVersion: 2.8.0-0-main-unstable-2025-01-28-06-38-56-0
+    created: "2025-01-28T07:25:17.302692064Z"
+    dependencies:
+    - name: openebs-crds
+      repository: ""
+      version: 4.1.2
+    - name: localpv-provisioner
+      repository: https://openebs.github.io/dynamic-localpv-provisioner
+      version: 4.1.2
+    - condition: engines.local.zfs.enabled
+      name: zfs-localpv
+      repository: https://openebs.github.io/zfs-localpv
+      version: 2.7.0-develop
+    - condition: engines.local.lvm.enabled
+      name: lvm-localpv
+      repository: https://openebs.github.io/lvm-localpv
+      version: 1.6.2
+    - condition: engines.replicated.mayastor.enabled
+      name: mayastor
+      repository: https://openebs.github.io/mayastor-chart-donotuse
+      version: 2.8.0-0-main-unstable-2025-01-28-06-38-56-0
+    description: Containerized Attached Storage for Kubernetes
+    digest: 2c4210ad06acf687138109c346f35bdb480aefba28f59858333fec2a753e965a
+    home: https://www.openebs.io/
+    icon: https://raw.githubusercontent.com/cncf/artwork/HEAD/projects/openebs/icon/color/openebs-icon-color.png
+    keywords:
+    - cloud-native-storage
+    - block-storage
+    - local-storage
+    - NVMe
+    - storage
+    - kubernetes
+    name: openebs
+    sources:
+    - https://github.com/openebs/openebs
+    urls:
+    - https://openebs.github.io/mayastor-chart-donotuse/openebs-2.8.0-0-main-unstable-2025-01-28-06-38-56-0.tgz
+    version: 2.8.0-0-main-unstable-2025-01-28-06-38-56-0
+  - apiVersion: v2
     appVersion: 2.8.0-0-main-unstable-2025-01-28-00-07-46-0
     created: "2025-01-28T00:47:55.24310436Z"
     dependencies:
@@ -18174,4 +18213,4 @@ entries:
     urls:
     - https://openebs.github.io/mayastor-chart-donotuse/openebs-2.8.0-0-main-unstable-2024-08-27-14-37-58-0.tgz
     version: 2.8.0-0-main-unstable-2024-08-27-14-37-58-0
-generated: "2025-01-28T07:21:40.593244096Z"
+generated: "2025-01-28T07:25:17.277596829Z"
